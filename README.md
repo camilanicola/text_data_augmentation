@@ -35,15 +35,20 @@ pip install pandas nlpaug openpyxl
     Recombination and Output: The modified or augmented DataFrames for each class are combined into a single DataFrame and exported to an Excel file.
 
 #Functions
+
 ##reduz_linhas(db)
 
 Reduces the number of rows in the DataFrame db to 100 by randomly dropping excess rows.
+
 ##augment_data(db)
 
 Augments the DataFrame db by adding synthetic rows until it contains 100 rows. This is done through synonym replacement in a specified text column.
+
 ##main()
 
 The main function that orchestrates the loading of the Excel file, processes each class through reduction or augmentation as needed, and then combines and exports the resulting DataFrame to a new Excel file.
+
+
 #Note
 
 The script assumes the existence of a 'Classe' column for class identification and a 'Texto Extraído' column for text that will be used for augmentation. Adjust these column names based on your dataset.
