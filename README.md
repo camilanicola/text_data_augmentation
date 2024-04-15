@@ -5,7 +5,7 @@
 This Python script is designed to process and augment datasets contained in an Excel file. The primary goal is to ensure each class within the dataset has exactly 100 rows, either by reducing the number of rows if there are more than 100, or by augmenting the dataset with synthetic data generated through word synonym replacement if there are fewer than 100 rows. The script leverages pandas for data manipulation and nlpaug for data augmentation.
 Requirements
 
-    Python 3.x
+    Python 3.11
     pandas
     nlpaug
     openpyxl (for reading/writing Excel files)
