@@ -31,17 +31,17 @@ def augment_data(db):
 
 def main():    
     df=pd.read_excel('path/to/excel/file')
-    df_cedula_credito=df[df['Classe']=='cedula_credito_bancario']
-    df_certificado=df[df['Classe']=='certificado_conclusao_formalizacao']
-    df_comprovante=df[df['Classe']=='comprovante_pagamento']
-    df_proposta=df[df['Classe']=='detalhes_proposta']
-    df_fatura=df[df['Classe']=='fatura_mensal']
-    df_laudo_agressor=df[df['Classe']=='laudo_agressor']
-    df_laudo_atendimento=df[df['Classe']=='laudo_atendimento']
-    df_laudo_checklist=df[df['Classe']=='laudo_checklist']
-    df_planilha=df[df['Classe']=='planilha_evolutiva_debitos']
-    df_termo_adesao=df[df['Classe']=='termo_adesao_cartao_credito_consignado']
-    df_termo_consentimento=df[df['Classe']=='termo_consentimento_esclarecimento']
+    df_cedula_credito=df[df['Classe']=='cedula']
+    df_certificado=df[df['Classe']=='certificado']
+    df_comprovante=df[df['Classe']=='comprovante']
+    df_proposta=df[df['Classe']=='detalhes']
+    df_fatura=df[df['Classe']=='fatura']
+    df_laudo_agressor=df[df['Classe']=='laudo1']
+    df_laudo_atendimento=df[df['Classe']=='laudo2']
+    df_laudo_checklist=df[df['Classe']=='laudo3']
+    df_planilha=df[df['Classe']=='planilha']
+    df_termo_adesao=df[df['Classe']=='termo']
+    df_termo_consentimento=df[df['Classe']=='termo_consentimento']
     
 
     classes=[df_cedula_credito,df_certificado,df_comprovante,df_proposta,df_fatura,df_laudo_agressor,df_laudo_atendimento,df_laudo_checklist,df_planilha,df_termo_adesao,df_termo_consentimento]
